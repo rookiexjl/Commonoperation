@@ -22,19 +22,19 @@ def dirlist(path, allfile):
         
 
 
-def ngplist(allfile, ngplist):
+def npglist(allfile, ngplist):
     '''
         return .npg file
     '''
     for file in allfile:
         if file.endswith('.npg'):
-            ngplist.append(file)
-    return ngplist
+            npglist.append(file)
+    return npglist
     
 
 if __name__ == '__main__':
     path = 'c:\\'
     allfile = dirlist(path, [])
     print len(allfile)
-    ngplist = ngplist(allfile, [])
-    print ngplist
+    npglist = npglist(allfile, [])
+    print npglist
