@@ -4,7 +4,7 @@ import os
 
 def dirlist(path, allfile):
     '''
-        list all file
+        list all file or can use os.walk mode
     '''
     try:
         filelist = os.listdir(path)
